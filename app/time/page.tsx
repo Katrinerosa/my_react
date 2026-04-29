@@ -1,5 +1,5 @@
 export default async function TimePage() {
-  let timeStr = "Ukjent";
+  let timeStr = "Ukendt";
 
   try {
     const res = await fetch("https://timeapi.io/api/Time/current/zone?timeZone=Europe/Copenhagen");
