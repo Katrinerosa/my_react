@@ -23,11 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
+    //html tag er her sat til engelsk, og der er tilføjet klasser for at bruge de importerede fonte og sikre, at siden fylder hele højden og har antialiasing for bedre tekstvisning. Body-tagget er også sat op til at være en flex-container, så indholdet kan arrangeres i en kolonne.
+ //body tag, er her sat til at fylde hele højden og være en flex-container, der arrangerer sit indhold i en kolonne. Dette sikrer, at indholdet strækker sig over hele skærmen og er let at læse med de importerede fonte.
+
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+     
       <body className="min-h-full flex flex-col">{children}</body>
+
     </html>
   );
 }
